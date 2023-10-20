@@ -56,7 +56,6 @@ body {
 header {
   max-width: 100%;
   height: 600px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -68,7 +67,7 @@ header {
   font-weight: 500;
 }
 
-.first-head, .second-head, .nav-bar, .account {
+header, .first-head, .second-head, .nav-bar, .account {
   display: flex; 
 } 
 
@@ -120,7 +119,6 @@ font-size: 2.5em;
 }
 
  .second-head > .calendar > li {
-    /* border-right: 2px solid var(--rtc-color-secundary); */
     padding: var(--rtc-padding-xs);
 }
 
@@ -146,39 +144,34 @@ font-size: 2.5em;
 }
 
 /*MAIN PART----------------------------------*/
+#main, .flex-section, article {
+  display: flex;
+}
+
 #main {
   width: 80%;
   margin: auto;
   color: var(--rtc-color-secundary);
-  display: flex;
   flex-direction: column;
   gap: var(--rtc-gap-l); 
 }
 
 .flex-section {
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: var(--rtc-margin-xl) auto;
-  /* gap: var(--rtc-gap-l); */
 }
 
 article {
   width: 50%;
-  display: flex;
   margin: auto;
   font-family: var(--rtc-primary-font-family);
   font-size: 0.8em;
   position: relative;
   text-align: justify;
 }
-
-/* .div-img {
-width: 180px;
-height: 230px;
-} */
 
 .div-img img {
   width: 200px;
@@ -204,7 +197,7 @@ left: -50px;
 }
 
 .read-more > a {
-  font-size: .8em;
+  font-size: .9em;
   color:  var(--rtc-color-primary)
 }
 
@@ -237,7 +230,6 @@ footer h2{
 
 .more {
   column-gap: var(--rtc-gap-l);
-  flex-wrap: wrap;
   margin: 0 0 var(--rtc-margin-s);
 }
 
